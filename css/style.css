@@ -2,7 +2,7 @@
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/OpenSans-Regular.ttf") format('truetype');
+  src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -27,34 +27,324 @@
 }
 
 body {
-  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+  line-height: normal;
   font-style: normal;
   font-weight: 400;
 }
 
-.nav__list__item a {
-  font-style: normal;
+h1 {
+  margin: 0;
+  font-family: "Tinos", serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #D67E35;
+}
+
+h1 span {
+  font-size: 50px;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+}
+
+h2 span {
+  color: #D67E35;
+}
+
+h3 {
+  font-family: "Tinos", serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+a {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
 }
 
-.nav__phone {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 100%;
-  text-decoration: none;
+section {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+
+.main-header {
+  margin: 0 auto 150px;
+  padding: 50px 165px;
+  max-width: 1110px;
+}
+
+.header__nav {
+  display: flex;
+  font-size: 14px;
+  background-color: #C4C4C4;
   color: #fff;
 }
 
+.logo {
+  margin: 0 auto 0 0;
+  max-width: 100px;
+}
+
+.nav__list {
+  margin: 0 36px 0 0;
+  padding: 0;
+  max-width: 277px;
+  list-style: none;
+}
+
+.nav__cart {
+  margin: 0 52px 0 0;
+  width: 13px;
+}
+
+.nav__phone-container {
+  margin: 0 45px 0 0;
+  width: 162px;
+}
+
+.nav__phone {
+  width: 162px;
+  font-size: 18px;
+}
+
 .nav__phone-caption {
-  font-style: normal;
-  font-weight: 400;
-  font-style: 14px;
-  line-height: 100%;
+  margin: 0;
+}
+
+.nav__button-booking {
+  padding: 14px 18px;
+  background-color: #FF7400;
+}
+
+.hero {
+  margin: 0 0 138px 0;
+  max-width: 518px;
+  background-color: #C4C4C4;
+}
+
+.hero h1 {
+  margin-bottom: 5px;
+}
+
+.hero span {
+  display: block;
+}
+
+.hero p {
+  margin: 0 0 35px 0;
+  font-size: 18px;
+  text-transform: uppercase;
   color: #fff;
+}
+
+.hero__button-menu {
+  padding: 14px 28px;
+  background-color: #FF7400;
+  font-size: 14px;
+}
+
+.features {
+  margin: 0 0 150px 0;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list__feature {
+  max-width: 349px;
+  height: 328px;
+  padding: 139px 20px 0;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Tinos", serif;
+  font-size: 26px;
+  color: #656363;
+}
+
+.list__feature__title {
+  margin: 0 0 20px 0;
+  font-size: 26px;
+  color: #2C2C2C;
+}
+
+.list__feature__title span {
+  text-transform: capitalize;
+}
+
+.about-container {
+  margin: 0 0 122px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  margin: 16px 0 0 0;
+  max-width: 444px;
+  color: #656363;
+}
+
+.about h2 {
+  margin: 0 0 21px 0;
+}
+
+.about>p {
+  margin: 0 0 80px 0;
+}
+
+.about__list {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.about__list__item p:first-child {
+  font-size: 40px;
+  color: #BC9060;
+}
+
+.about__list__item p:last-child {
+  font-size: 20px;
+}
+
+.banner {
+  margin: 0 0 132px 0;
+  max-width: 1089px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.banner-container {
+  max-width: 601px;
+}
+
+.banner__lead {
+  margin: 0 0 20px 0;
+  font-family: "Tinos", serif;
+  font-size: 52px;
+  color: #D67E34;
+  font-weight: 400;
+}
+
+.banner__text {
+  font-size: 20px;
+  color: #fff;
+}
+
+.banner__link {
+  padding: 14px 18px;
+  font-size: 14px;
+  background-color: #FF7400;
+  color: #fff;
+}
+
+.dishes {
+  margin: 0 0 150px 0;
+}
+
+.dishes h2 {
+  margin: 0 0 139px 0;
+}
+
+.dishes__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dishes__image {
+  max-width: 445px;
+  width: 100%;
+  background-image: url(../img/pizza.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.dishes__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list__dish {
+  margin: 0 0 29px 0;
+  display: flex;
+  font-family: "Tinos", serif;
+  font-size: 26px;
+}
+
+.list__dish:last-child {
+  margin: 0;
+}
+
+.list__dish img {
+  margin: 0 30px 0 0;
+}
+
+.list__dish p {
+  margin: 35px 0 0 0;
+}
+
+.menu {
+  padding: 100px 0 226px 0;
+  background-color: #C4C4C4;
+}
+
+.menu h2 {
+  margin: 0 0 138px 0;
+  color: #fff;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.menu__list__item {
+  padding: 80px 62px 0;
+  background-color: #fff;
+}
+
+.menu__list__item a {
+  padding: 14px 68px;
+  background-color: #D67E34;
+}
+
+.reviews__list {
+  font-size: 20px;
+}
+
+.review__text {
+  font-style: italic;
+}
+
+.review__author {
+  font-weight: 600;
 }
